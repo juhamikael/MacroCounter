@@ -1,4 +1,4 @@
 # MacroCounter
 
-## Readme work in progress
+## Documentation Work in Progress
 ![Main Print](/images/Untitled.png)
