@@ -1,0 +1,16 @@
+//        ArrayList<Macrot> list = new ArrayList<>();
+//        Macrot jauheLiha = new Macrot("Jauheliha",(float)19.1,(float)0,(float)16.9);
+//        Macrot jotain = new Macrot("test", 12,25,2);
+//        jauheLiha.setWeight(50);
+//        jauheLiha.printMacroValue();
+//        jotain.printMacroValue();
+//
+//        list.add(jauheLiha);
+//        list.add(jotain);
+//
+//        for(int x = 0; x < list.size(); x++){
+//            System.out.println(list.get(x));
+//        }
+//
+//        activity.setActivityLevel("moderate");
+//        activity.printActivityLevel();
