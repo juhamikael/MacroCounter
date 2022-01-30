@@ -3,9 +3,12 @@ public class ActivityLevel extends CenterPrint {
     private String mActivity_level_text;
 
     public ActivityLevel(){
+        // Basic constructor
+        // Activity level is set Light as default
         setActivityLevel(ActivityMultiplier.Light);
     }
     public ActivityLevel(float aActivity_level){
+        // 1 parameter constructor
         mActivity_level = aActivity_level;
     }
 
@@ -16,7 +19,7 @@ public class ActivityLevel extends CenterPrint {
         // 1 to 3 days per week         select  Light
         // 3 to 5 days per week         select  Moderate
         // 6 to 7 days per week         select  Active
-        // Every Day + other activity   select  Very Active
+        // Every Day + other activity   select  VeryActive
         if (aActivity == ActivityMultiplier.Light) {
             mActivity_level = (float) 1.3624;
             mActivity_level_text = "Light";
