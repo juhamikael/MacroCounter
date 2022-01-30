@@ -1,4 +1,4 @@
-public enum ActivityMultiplier {
+public enum ActivityLevelMultiplierEnum {
     Light,
     Active,
     Moderate,

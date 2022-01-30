@@ -7,7 +7,7 @@
 - BMR
 - CaloriesIntake
 # Enums 
-- WeightLossStyle
+- CaloriesIntake_WeightLossStyle_Enum
 - ActivityMultiplier
 
 # **Class Methods**
@@ -58,7 +58,7 @@ printBMR()
 CaloriesIntake(BMR aBMR, ActivityLevel aUserActivity) : CONSTRUCTOR
 
 setCalories()
-setWeightLossStyle(WeightLossStyle aWeightlossStyle)
+setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum aWeightlossStyle)
 
 getWeightLossStyle()
 getWeightLossMultiplier()

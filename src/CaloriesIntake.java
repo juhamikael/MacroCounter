@@ -11,7 +11,7 @@ public class CaloriesIntake {
         mUserBMR = aBMR;
         mUserActivity = aUserActivity;
         // Setting daily and weekly calories here
-        setWeightLossStyle(WeightLossStyle.MaintainWeight);
+        setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.MaintainWeight);
     }
 
     public void setCalories(){
@@ -27,19 +27,19 @@ public class CaloriesIntake {
         mCaloriesIntakeWeekly = (int) (BMR7 * weightLossMultiplier * activityLevel);
     }
 
-    public void setWeightLossStyle(WeightLossStyle aWeightlossStyle) {
+    public void setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum aWeightlossStyle) {
         // Different weight loss styles, using Enum for this
         // Each have different multiplier, we need this to count daily calories intake
-        if (aWeightlossStyle == WeightLossStyle.MaintainWeight) {
+        if (aWeightlossStyle == CaloriesIntake_WeightLossStyle_Enum.MaintainWeight) {
             mWeightLossMultiplier = 1;
             mWeightLossStyle = "Maintain weight";
-        } else if (aWeightlossStyle == WeightLossStyle.MildWeightLoss) {
+        } else if (aWeightlossStyle == CaloriesIntake_WeightLossStyle_Enum.MildWeightLoss) {
             mWeightLossMultiplier = (float) 0.9224;
             mWeightLossStyle = "Mild weight loss";
-        } else if (aWeightlossStyle == WeightLossStyle.WeightLoss) {
+        } else if (aWeightlossStyle == CaloriesIntake_WeightLossStyle_Enum.WeightLoss) {
             mWeightLossMultiplier = (float) 0.8445;
             mWeightLossStyle = "Normal weight loss";
-        } else if (aWeightlossStyle == WeightLossStyle.ExtremeWeightLoss) {
+        } else if (aWeightlossStyle == CaloriesIntake_WeightLossStyle_Enum.ExtremeWeightLoss) {
             mWeightLossMultiplier = (float) 0.689;
             mWeightLossStyle = "Extreme weight loss";
         }

@@ -5,14 +5,14 @@ public class ActivityLevel {
     public ActivityLevel(){
         // Basic constructor
         // Activity level is set Light as default
-        setActivityLevel(ActivityMultiplier.Light);
+        setActivityLevel(ActivityLevelMultiplierEnum.Light);
     }
     public ActivityLevel(float aActivity_level){
         // 1 parameter constructor
         mActivity_level = aActivity_level;
     }
 
-    public void setActivityLevel( ActivityMultiplier aActivity ){
+    public void setActivityLevel( ActivityLevelMultiplierEnum aActivity ){
         // Choose between:
         // Light, Moderate, Active or Very Active
         // If you move:
@@ -20,16 +20,16 @@ public class ActivityLevel {
         // 3 to 5 days per week         select  Moderate
         // 6 to 7 days per week         select  Active
         // Every Day + other activity   select  VeryActive
-        if (aActivity == ActivityMultiplier.Light) {
+        if (aActivity == ActivityLevelMultiplierEnum.Light) {
             mActivity_level = (float) 1.3624;
             mActivity_level_text = "Light";
-        } else if(aActivity == ActivityMultiplier.Moderate) {
+        } else if(aActivity == ActivityLevelMultiplierEnum.Moderate) {
             mActivity_level =  (float) 1.55;
             mActivity_level_text = "Moderate";
-        } else if(aActivity == ActivityMultiplier.Active){
+        } else if(aActivity == ActivityLevelMultiplierEnum.Active){
             mActivity_level =  (float) 1.709;
             mActivity_level_text = "Active";
-        } else if(aActivity == ActivityMultiplier.VeryActive){
+        } else if(aActivity == ActivityLevelMultiplierEnum.VeryActive){
             mActivity_level = (float) 1.9;
             mActivity_level_text = "Very Active";
         }

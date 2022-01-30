@@ -1,4 +1,4 @@
-public enum WeightLossStyle {
+public enum CaloriesIntake_WeightLossStyle_Enum {
     MaintainWeight,
     MildWeightLoss,
     WeightLoss,
