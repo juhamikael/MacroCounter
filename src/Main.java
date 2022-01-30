@@ -12,14 +12,18 @@ public class Main {
 
         // Passing person1 BMR & Activity level to caloriesIntake calculation
         CaloriesIntake person1_calories = new CaloriesIntake(person1_BMR,person1_activity);
-        person1_calories.setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.ExtremeWeightLoss);
+        person1_calories.setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.MaintainWeight);
         person1_calories.setCalories();
 
+        MacroSplit person1_macros = new MacroSplit(person1_calories);
+        person1_macros.setBodyType(MacroSplitEnum.Endomorph);
         //Print information
+
         person1.printBodyInformation();
         person1_BMR.printBMR();
         person1_calories.printWeightLossStyle();
         person1_activity.printActivityLevel();
+        person1_macros.printSplittedCalories();
         person1_calories.printCalories();
     }
 
