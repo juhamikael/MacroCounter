@@ -1,5 +1,5 @@
 
-public class BMR extends CenterPrint {
+public class BMR {
     // BMR = Basal metabolic rate
     private int mBMR;
 
@@ -46,10 +46,10 @@ public class BMR extends CenterPrint {
     }
 
     public void printBMR() {
-        mBodyInfo.printBodyInformation();
-        centerPrint("BMR");
+
+        OwnLibrary.centerPrint("BMR");
         System.out.println("BMR: " + getBMR());
         System.out.println("BMR7: " + getBMR() * 7);
-        printLine();
+        OwnLibrary.printLine();
     }
 }

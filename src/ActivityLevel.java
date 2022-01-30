@@ -1,4 +1,4 @@
-public class ActivityLevel extends CenterPrint {
+public class ActivityLevel {
     private float mActivity_level;
     private String mActivity_level_text;
 
@@ -38,10 +38,11 @@ public class ActivityLevel extends CenterPrint {
         return mActivity_level;
     }
     public void printActivityLevel(){
-        centerPrint("Activity");
+        OwnLibrary.centerPrint("Activity");
         System.out.println("Activity: " + mActivity_level_text);
         System.out.println("Activity multiplier: " + mActivity_level);
-        printLine();
+        OwnLibrary.printLine();
+
     }
 
 }

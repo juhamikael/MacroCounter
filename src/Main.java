@@ -16,6 +16,7 @@ public class Main {
         person1_calories.setCalories();
 
         //Print information
+        person1.printBodyInformation();
         person1_BMR.printBMR();
         person1_calories.printWeightLossStyle();
         person1_activity.printActivityLevel();

@@ -11,7 +11,7 @@ public class BodyInformation{
     private String mGender_text;
     private float mBMI;
     // Check CenterPrint file for more info about function centerPrint() instance
-    private CenterPrint center = new CenterPrint();
+
 
     public BodyInformation(){
         // Basic Constructor
@@ -53,6 +53,7 @@ public class BodyInformation{
             mHeight = 0;
         }
     }
+
     public float getHeight(){
         return mHeight;
     }
@@ -104,10 +105,10 @@ public class BodyInformation{
     public void printBodyInformation(){
         // Basic printing to show given information and BMI
         // Check CenterPrint file for more info about function center.centerPrint() method
-        center.centerPrint("Body Information");
+        OwnLibrary.centerPrint("Body Information");
         System.out.println("Weight: " + mWeight + " kg");
         System.out.println("Height: " + mHeight + " cm");
         printBMI();
-        System.out.println("----------------------------");
+        OwnLibrary.printLine();
     }
 }

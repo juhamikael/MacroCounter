@@ -1,4 +1,4 @@
-public class CaloriesIntake extends CenterPrint {
+public class CaloriesIntake {
     private int mCaloriesIntakeDaily;
     private int mCaloriesIntakeWeekly;
     private float mWeightLossMultiplier;
@@ -58,16 +58,17 @@ public class CaloriesIntake extends CenterPrint {
        return mCaloriesIntakeWeekly;
     }
     public void printWeightLossStyle(){
-        centerPrint("Weight goal");
+
+        OwnLibrary.centerPrint("Weight goal");
         System.out.println("Goal: " + getWeightLossStyle());
         System.out.println("Multiplier: " + getWeightLossMultiplier());
-        printLine();
+        OwnLibrary.printLine();
     }
     public void printCalories(){
-        centerPrint("Calories");
+        OwnLibrary.centerPrint("Calories");
         System.out.println("Calories Daily: " + getCaloriesDaily());
         System.out.println("Calories Weekly: " + getCaloriesWeekly());
-        printLine();
+        OwnLibrary.printLine();
     }
 }
 
