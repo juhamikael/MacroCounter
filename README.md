@@ -2,14 +2,13 @@
 
 
 # Classes
-### - BodyInformation
-### - ActivityLevel
-### - BMR
-### - CaloriesIntake
-
+- BodyInformation
+- ActivityLevel
+- BMR
+- CaloriesIntake
 # Enums 
-### - WeightLossStyle
-### - ActivityMultiplier
+- WeightLossStyle
+- ActivityMultiplier
 
 # **Class Methods**
 ## **Body Information**
