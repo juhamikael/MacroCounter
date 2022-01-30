@@ -11,7 +11,7 @@
 - ActivityMultiplier
 
 # **Class Methods**
-## **Body Information**
+## **1 Body Information**
 ``` 
 BodyInformation() : CONSTRUCTOR
 BodyInformation(float aWeight, float aHeight, int aGender, int aAge) : CONSTRUCTOR
@@ -35,7 +35,7 @@ void printBodyInformation()
 ```
 
 
-## **ActivityLevel**
+## **2 ActivityLevel**
 ``` 
 ActivityLevel() : CONSTRUCTOR
 ActivityLevel(float aActivity_level) : CONSTRUCTOR
@@ -44,7 +44,7 @@ setActivityLevel(ActivityMultiplier aActivity)
 getActivityLevel()
 printActivityLevel(
 ```
-## **BMR**
+## **3 BMR**
 ```
 BMR() : CONSTRUCTOR
 BMR(BodyInformation aBodyInfo) : CONSTRUCTOR
@@ -53,7 +53,7 @@ setBMR()
 getBMR()
 printBMR()
 ```
-## **CaloriesIntake**
+## **4 CaloriesIntake**
 ```
 CaloriesIntake(BMR aBMR, ActivityLevel aUserActivity) : CONSTRUCTOR
 
