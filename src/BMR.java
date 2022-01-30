@@ -7,13 +7,12 @@ public class BMR {
     private ActivityLevel mActivityLevel = new ActivityLevel();
 
     public BMR() {
-        // Basic constructor
         mBMR = 0;
     }
     public BMR(BodyInformation aBodyInfo) {
-        // 1 Parametric constructor to get the basic information like Weight, height etc.
+        // Getting the basic information like Weight, height etc.
         mBodyInfo = aBodyInfo;
-        // Setting default WeightLossStyle to MaintainWeight which value is 1
+        // Setting MaintainWeight from CaloriesIntake_WeightLossStyle_Enum to default, which value is 1
         setBMR();
     }
     public void setBMR() {

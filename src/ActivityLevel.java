@@ -3,12 +3,10 @@ public class ActivityLevel {
     private String mActivity_level_text;
 
     public ActivityLevel(){
-        // Basic constructor
         // Activity level is set Light as default
         setActivityLevel(ActivityLevelMultiplierEnum.Light);
     }
     public ActivityLevel(float aActivity_level){
-        // 1 parameter constructor
         mActivity_level = aActivity_level;
     }
 

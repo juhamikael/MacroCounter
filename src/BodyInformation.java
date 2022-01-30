@@ -14,8 +14,7 @@ public class BodyInformation{
 
 
     public BodyInformation(){
-        // Basic Constructor
-        // Setting everything to 0
+        // Everything to 0 by default
         mWeight = 0;
         mHeight = 0;
         mGender = 0;
@@ -31,7 +30,6 @@ public class BodyInformation{
         setBMI();
     }
     public void setWeight(float aWeight){
-        // Making sure that height is between 40 cm and 250 cm
         if(aWeight > 2 && aWeight < 500){
             mWeight = aWeight;
         }
@@ -44,7 +42,6 @@ public class BodyInformation{
         return mWeight;
     }
     public void setHeight(float aHeight){
-        // Making sure that height is between 40 cm and 250 cm
         if(aHeight > 40 && aHeight < 250){
             mHeight = aHeight;
         }

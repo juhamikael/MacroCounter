@@ -1,3 +1,5 @@
+//WORK IN PROGRESS
+
 public class Macrot {
     private String mFoodName;
     private float mProtein;
@@ -6,7 +8,6 @@ public class Macrot {
     private float mWeight = 0;
     private float mAmountTaken;
     private float mDefaultWeight = 100;
-
 
     public Macrot(){
         mFoodName = "N/A";

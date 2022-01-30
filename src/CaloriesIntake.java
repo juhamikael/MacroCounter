@@ -7,10 +7,10 @@ public class CaloriesIntake {
     private final ActivityLevel mUserActivity;
 
     public CaloriesIntake(BMR aBMR, ActivityLevel aUserActivity){
-        // Default constructor to get access to BMR and userActivity
+        // Getting values from BMR and userActivity
         mUserBMR = aBMR;
         mUserActivity = aUserActivity;
-        // Setting daily and weekly calories here
+        // Setting "weight loss style" to define daily and weekly calories here
         setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.MaintainWeight);
     }
 
