@@ -12,7 +12,7 @@ public class Main {
 
         // Passing person1 BMR & Activity level to caloriesIntake calculation
         CaloriesIntake person1_calories = new CaloriesIntake(person1_BMR,person1_activity);
-        person1_calories.setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.MaintainWeight);
+        person1_calories.setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.WeightLoss);
         person1_calories.setCalories();
 
         MacroSplit person1_macros = new MacroSplit(person1_calories);

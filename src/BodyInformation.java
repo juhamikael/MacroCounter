@@ -26,6 +26,7 @@ public class BodyInformation{
         mWeight = aWeight;
         mHeight = aHeight;
         mGender = aGender;
+        setGender(aGender);
         mAge = aAge;
         setBMI();
     }
@@ -106,6 +107,8 @@ public class BodyInformation{
         System.out.println("Weight: " + mWeight + " kg");
         System.out.println("Height: " + mHeight + " cm");
         printBMI();
+        System.out.println("Age: " + mAge);
+        System.out.println("Gender: " + getGender_text());
         OwnLibrary.printLine();
     }
 }

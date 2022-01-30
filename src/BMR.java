@@ -4,7 +4,6 @@ public class BMR {
     private int mBMR;
 
     private BodyInformation mBodyInfo = new BodyInformation();
-    private ActivityLevel mActivityLevel = new ActivityLevel();
 
     public BMR() {
         mBMR = 0;
@@ -45,7 +44,6 @@ public class BMR {
     }
 
     public void printBMR() {
-
         OwnLibrary.centerPrint("BMR");
         System.out.println("BMR: " + getBMR());
         System.out.println("BMR7: " + getBMR() * 7);
