@@ -1,6 +1,6 @@
 # MacroCounter
 
-### [How to use guide](./guide.md)
+### [How to use guide](./Guide.md)
 
 # Classes
 - BodyInformation
