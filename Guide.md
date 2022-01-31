@@ -1,7 +1,6 @@
 # How to use
 
 ## BodyInformation
----
 ### **Required parameters:** 
 1. Weight(KG) : float
 2. Height(CM) : float
@@ -29,7 +28,6 @@ Gender: Male
 
 
 ## Activity Level
----
 By default Activity Level is set to Light
 
 ActivityLevel can be either 
@@ -55,7 +53,6 @@ Activity multiplier: 1.55
 ```
 
 ## BMR
----
 ### **Required parameter**: 
 ***BodyInformation object*** so in this case: ***person1***
 
@@ -75,7 +72,6 @@ BMR7: 13888
 `BMR means "Basal metabolic rate"`
 
 ## CaloriesIntake
----
 Before calories can be calculated we need to get **BMR** and **Activity level** 
 
 ### **Required parameter**: 
@@ -128,7 +124,6 @@ With maintainWeight(***Multiplier 1***) calories would be:
 ```
 
 ## MacroSplit
----
 ### **Required parameter**: 
 - ***CaloriesIntake Object*** so in this case: ***person1_calories***
 
