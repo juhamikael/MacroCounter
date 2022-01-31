@@ -1,4 +1,4 @@
-# How to use in main
+# How to use in **main**
 
 ## BodyInformation
 ### **Required parameters:** 
@@ -7,7 +7,7 @@
 3. Gender : int (1 or 2) 1 is Male / 2 is Female
 4. Age : int
 
-### Usage:
+### #Usage:
 
 ```
 BodyInformation person1 = new BodyInformation(90,190,1,30);
@@ -15,7 +15,7 @@ BodyInformation person1 = new BodyInformation(90,190,1,30);
 person1.printBodyInformation();
 ```
 
-### Output:
+### #Output:
 ```
 -----Body Information-------
 Weight: 90.0 kg
@@ -36,7 +36,7 @@ ActivityLevel can be either
 - Active, 
 - VeryActive
 
-### Usage:
+### #Usage:
 ```
 ActivityLevel person1_activity = new ActivityLevel();
 person1_activity.setActivityLevel(ActivityLevelMultiplierEnum.Moderate);
@@ -44,7 +44,7 @@ person1_activity.setActivityLevel(ActivityLevelMultiplierEnum.Moderate);
 person1_activity.printActivityLevel();
 ```
 
-### Output:
+### #Output:
 ```
 ---------Activity-----------
 Activity: Moderate
@@ -56,13 +56,13 @@ Activity multiplier: 1.55
 ### **Required parameter**: 
 ***BodyInformation object*** so in this case: ***person1***
 
-### Usage:
+### #Usage:
 ```
 BMR person1_BMR = new BMR(person1);
 
 person1_BMR.printBMR();
 ```
-
+### #Output:
 ```
 ------------BMR-------------
 BMR: 1984
@@ -86,7 +86,7 @@ Can be changed to
 - WeightLoss,
 - ExtremeWeightLoss
 
-### Usage:
+### #Usage:
 ```
 CaloriesIntake person1_calories = new CaloriesIntake(person1_BMR,person1_activity);
 person1_calories.setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.WeightLoss);
@@ -96,7 +96,7 @@ person1_calories.printWeightLossStyle();
 person1_calories.printCalories();
 ```
 
-### Output
+### #Output
 ```
 --------Weight goal---------
 Goal: Normal weight loss
@@ -140,13 +140,13 @@ Before it can show any info, macro split is defined by Bodytype and is needed to
     - Protein: 35%
     - Carbs: 25%
     - Fat: 40%
-### Usage:
+### #Usage:
 ```
 MacroSplit person1_macros = new MacroSplit(person1_calories);
 person1_macros.setBodyType(MacroSplitEnum.Mesomorph);
 ```
 
-### Output
+### #Output
 ```
 ------Splitted Macros-------
 Body type: Mesomorph
