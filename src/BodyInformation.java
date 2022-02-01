@@ -10,6 +10,7 @@ public class BodyInformation{
     private int mGender;
     private String mGender_text;
     private float mBMI;
+    private String mBMI_string;
     // Check CenterPrint file for more info about function centerPrint() instance
 
 
@@ -29,7 +30,46 @@ public class BodyInformation{
         setGender(aGender);
         mAge = aAge;
         setBMI();
+        setBMI_string(mBMI);
     }
+
+    public void setBMI_string(float aBMI){
+        if (aBMI < 16){
+            mBMI_string = "Underweight (Severe thinness)";
+        }
+        else if (aBMI >= 16 && aBMI < 17){
+            mBMI_string = "Underweight (Moderate thinness)";
+        }
+        else if (aBMI >= 17 && aBMI < 18.5){
+            mBMI_string = "Underweight (Mild thinness)";
+        }
+        else if (aBMI >= 18.5 && aBMI < 25){
+            mBMI_string = "Normal Weight";
+        }
+        else if (aBMI >= 25 && aBMI < 30){
+            mBMI_string = "Overweight (Pre-obese)";
+        }
+        else if (aBMI >= 30 && aBMI < 35){
+            mBMI_string = "Obese (Class I)";
+        }
+        else if (aBMI >= 35 && aBMI < 40){
+            mBMI_string = "Obese (Class II)";
+        }
+        else if (aBMI >= 40){
+            mBMI_string = "Obese (Class III)";
+        }
+    }
+    public String getBMI_text(){
+        return mBMI_string;
+    }
+
+
+
+
+    // Obese (Class I)	30.0 – 34.9
+    // Obese (Class II)	35.0 – 39.9
+    // Obese (Class III)	≥ 40.0	≥
+
     public void setWeight(float aWeight){
         if(aWeight > 2 && aWeight < 500){
             mWeight = aWeight;
@@ -98,7 +138,9 @@ public class BodyInformation{
         // Out put was with comma, and gotta get it as . dot
         df.setDecimalFormatSymbols(DecimalFormatSymbols.getInstance(Locale.ENGLISH));
         df.setMaximumFractionDigits(2);
-        System.out.println("BMI: " + df.format(getBMI()));
+        System.out.print("BMI: " + df.format(getBMI()));
+        System.out.println(" - " + getBMI_text());
+
     }
     public void printBodyInformation(){
         // Basic printing to show given information and BMI
@@ -106,9 +148,10 @@ public class BodyInformation{
         OwnLibrary.centerPrint("Body Information");
         System.out.println("Weight: " + mWeight + " kg");
         System.out.println("Height: " + mHeight + " cm");
-        printBMI();
         System.out.println("Age: " + mAge);
+        printBMI();
         System.out.println("Gender: " + getGender_text());
         OwnLibrary.printLine();
     }
 }
+

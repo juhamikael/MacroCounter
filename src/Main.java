@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args){
         // Configuring basic information
-        BodyInformation person1 = new BodyInformation(90,190,1,30);
+        BodyInformation person1 = new BodyInformation(108,199,1,33);
 
         // Configuring activity level to person 1
         ActivityLevel person1_activity = new ActivityLevel();
-        person1_activity.setActivityLevel(ActivityLevelMultiplierEnum.Moderate);
+        person1_activity.setActivityLevel(ActivityLevelMultiplierEnum.Light);
 
         // Getting person1 BMR
         BMR person1_BMR = new BMR(person1);
@@ -16,7 +16,7 @@ public class Main {
         person1_calories.setCalories();
 
         MacroSplit person1_macros = new MacroSplit(person1_calories);
-        person1_macros.setBodyType(MacroSplitEnum.Endomorph);
+        person1_macros.setBodyType(MacroSplitEnum.Ectomorph);
         //Print information
 
         person1.printBodyInformation();
