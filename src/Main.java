@@ -1,30 +1,33 @@
 public class Main {
     public static void main(String[] args){
         // Configuring basic information
-        BodyInformation person1 = new BodyInformation(108,199,1,33);
+
+        BodyInformation person = new BodyInformation(105,190,1,33);
 
         // Configuring activity level to person 1
-        ActivityLevel person1_activity = new ActivityLevel();
-        person1_activity.setActivityLevel(ActivityLevelMultiplierEnum.Light);
+        ActivityLevel person_activity = new ActivityLevel();
+        person_activity.setActivityLevel(ActivityLevelMultiplierEnum.Light);
 
-        // Getting person1 BMR
-        BMR person1_BMR = new BMR(person1);
+        // Getting person BMR
+        BMR person_BMR = new BMR(person);
 
-        // Passing person1 BMR & Activity level to caloriesIntake calculation
-        CaloriesIntake person1_calories = new CaloriesIntake(person1_BMR,person1_activity);
-        person1_calories.setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.WeightLoss);
-        person1_calories.setCalories();
+        // Passing person BMR & Activity level to caloriesIntake calculation
+        CaloriesIntake person_calories = new CaloriesIntake(person_BMR,person_activity);
+        person_calories.setWeightLossStyle(CaloriesIntake_WeightLossStyle_Enum.WeightLoss);
+        person_calories.setCalories();
 
-        MacroSplit person1_macros = new MacroSplit(person1_calories);
-        person1_macros.setBodyType(MacroSplitEnum.Ectomorph);
+        MacroSplit person_macros = new MacroSplit(person_calories);
+        person_macros.setBodyType(MacroSplitEnum.Ectomorph);
+
         //Print information
+        person.printBodyInformation();
+        person_BMR.printBMR();
+        person_calories.printWeightLossStyle();
+        person_activity.printActivityLevel();
+        person_macros.printSplittedCalories();
+        person_calories.printCalories();
 
-        person1.printBodyInformation();
-        person1_BMR.printBMR();
-        person1_calories.printWeightLossStyle();
-        person1_activity.printActivityLevel();
-        person1_macros.printSplittedCalories();
-        person1_calories.printCalories();
     }
+
 
 }

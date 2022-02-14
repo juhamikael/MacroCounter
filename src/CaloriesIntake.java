@@ -34,13 +34,13 @@ public class CaloriesIntake {
             mWeightLossMultiplier = 1;
             mWeightLossStyle = "Maintain weight";
         } else if (aWeightlossStyle == CaloriesIntake_WeightLossStyle_Enum.MildWeightLoss) {
-            mWeightLossMultiplier = (float) 0.9224;
+            mWeightLossMultiplier = 0.9224f;
             mWeightLossStyle = "Mild weight loss";
         } else if (aWeightlossStyle == CaloriesIntake_WeightLossStyle_Enum.WeightLoss) {
-            mWeightLossMultiplier = (float) 0.8445;
+            mWeightLossMultiplier = 0.8445f;
             mWeightLossStyle = "Normal weight loss";
         } else if (aWeightlossStyle == CaloriesIntake_WeightLossStyle_Enum.ExtremeWeightLoss) {
-            mWeightLossMultiplier = (float) 0.689;
+            mWeightLossMultiplier = 0.689f;
             mWeightLossStyle = "Extreme weight loss";
         }
     }

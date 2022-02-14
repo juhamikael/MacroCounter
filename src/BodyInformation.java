@@ -64,8 +64,6 @@ public class BodyInformation{
     }
 
 
-
-
     // Obese (Class I)	30.0 – 34.9
     // Obese (Class II)	35.0 – 39.9
     // Obese (Class III)	≥ 40.0	≥

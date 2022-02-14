@@ -17,21 +17,21 @@ public class MacroSplit {
     public void setBodyType(MacroSplitEnum aBodyType){
         if(aBodyType == MacroSplitEnum.Ectomorph){
             mBodyType = "Ectomorph";
-            mProteinMultiplier = (float) 0.25;
-            mCarbsMultiplier = (float) 0.55;
-            mFatMultiplier = (float) 0.2;
+            mProteinMultiplier = 0.25f;
+            mCarbsMultiplier = 0.55f;
+            mFatMultiplier = 0.2f;
         }
         if(aBodyType == MacroSplitEnum.Mesomorph){
             mBodyType = "Mesomorph";
-            mProteinMultiplier = (float) 0.3;
-            mCarbsMultiplier = (float) 0.4;
-            mFatMultiplier = (float) 0.3;
+            mProteinMultiplier = 0.3f;
+            mCarbsMultiplier = 0.4f;
+            mFatMultiplier = 0.3f;
         }
         if(aBodyType == MacroSplitEnum.Endomorph){
             mBodyType = "Endomorph";
-            mProteinMultiplier = (float) 0.35;
-            mCarbsMultiplier = (float) 0.25;
-            mFatMultiplier = (float) 0.4;
+            mProteinMultiplier = 0.35f;
+            mCarbsMultiplier = 0.25f;
+            mFatMultiplier = 0.4f;
         }
     }
     public int getProtein(){
